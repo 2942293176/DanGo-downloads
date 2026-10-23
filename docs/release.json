@@ -1,0 +1,26 @@
+{
+  "published": true,
+  "repository": "2942293176/DanGo-downloads",
+  "version": "0.3.0",
+  "publishedAt": "2026-10-23T13:31:24Z",
+  "assets": {
+    "installer": {
+      "name": "Dango-Setup-0.3.0-x64.exe",
+      "size": 112302601,
+      "sha256": "b485b14bea74ee280a00f39488829ef73711aaa046b88ba4a2c39d5d0615e25b",
+      "url": "https://github.com/2942293176/DanGo-downloads/releases/download/v0.3.0/Dango-Setup-0.3.0-x64.exe"
+    },
+    "portable": {
+      "name": "Dango-Portable-0.3.0-x64.exe",
+      "size": 112128041,
+      "sha256": "10fab070da6bc6a173696ff98fe7e8247508383cae64d81912976976daaebd81",
+      "url": "https://github.com/2942293176/DanGo-downloads/releases/download/v0.3.0/Dango-Portable-0.3.0-x64.exe"
+    },
+    "checksums": {
+      "name": "SHA256SUMS.txt",
+      "size": 187,
+      "sha256": "9a6f5b2c7e01ca2f4c750c0c94524947330190a45d9919c7eb946f9fb9fa8723",
+      "url": "https://github.com/2942293176/DanGo-downloads/releases/download/v0.3.0/SHA256SUMS.txt"
+    }
+  }
+}

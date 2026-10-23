@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5ee">
+  <meta name="description" content="团子 DanGo，一个轻盈的 Windows 桌面陪伴伙伴。点一点、揉揉脸，读一行故事，让工作和学习之间多一点松弛。">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>团子 DanGo — 给桌面一点小小的陪伴</title>
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header wrap">
+    <a class="brand" href="#" aria-label="团子 DanGo 首页"><img src="assets/dango.svg" width="46" height="43" alt=""><span>团子<span class="brand-en">DanGo</span></span></a>
+    <nav aria-label="主导航"><a href="#company">认识团子</a><a href="#guide">使用指南</a><a href="#faq">常见问题</a></nav>
+    <a class="nav-download" href="#download">带团子回家 <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="little-dot"></span> 桌面上，留一点柔软的位置</div>
+        <h1 id="hero-title">把一点松弛，<br>放在<span class="title-mark">桌面上<svg viewBox="0 0 300 16" aria-hidden="true"><path d="M4 11Q130 0 294 9"/></svg></span>。</h1>
+        <p class="hero-description">工作也好，学习也好。<br>有只软乎乎的小团子，陪你度过普通的一天。</p>
+        <div class="hero-actions"><a class="button button-primary" data-download="installer" href="https://github.com/2942293176/DanGo-downloads/releases/latest"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg><span>下载 Windows 版</span><span class="button-arrow" aria-hidden="true">↗</span></a><a class="soft-link" href="#company">先认识一下 <span aria-hidden="true">↓</span></a></div>
+        <p class="download-caption"><span data-version>Windows 10 / 11</span><i></i>64 位<i></i>无需注册</p>
+        <div class="hero-note"><span aria-hidden="true">✳</span><p>不催你打卡，也不催你努力。<br><strong>偶尔想起来，点一下就好。</strong></p></div>
+      </div>
+      <div class="hero-visual">
+        <div class="desktop-demo" id="desktop-demo" aria-label="团子互动演示">
+          <div class="desktop-bar"><span class="window-dots"><i></i><i></i><i></i></span><span>一小块属于你的桌面</span><span aria-hidden="true">↗</span></div>
+          <div class="desktop-surface">
+            <div class="desktop-time">14:30<span>今天，也慢慢来。</span></div>
+            <div class="mini-note"><span class="note-pin" aria-hidden="true"></span><span>TO: 忙碌的你</span><p>休息一下，<br>也没有关系。</p><svg viewBox="0 0 70 40" aria-hidden="true"><path d="M5 25q15-20 28 0 10-32 29-3M17 34q18-8 34 0"/></svg></div>
+            <span class="orbit orbit-one" aria-hidden="true">✦</span><span class="orbit orbit-two" aria-hidden="true">✧</span><span class="orbit orbit-three" aria-hidden="true">✳</span>
+            <div class="pet-spot"><span class="pet-shadow"></span><button class="demo-pet" id="demo-pet" type="button" aria-label="点击和团子打招呼，也可以在演示桌面里拖动"><img src="assets/dango.svg" width="230" height="214" alt="长着小绿芽的奶白色团子" draggable="false"></button><span class="pet-greeting" id="pet-greeting" role="status">摸摸，今天辛苦啦。</span></div>
+            <div class="demo-reader"><button id="demo-prev" type="button" aria-label="演示：上一行">‹</button><p id="demo-line">日子慢一点，小小的快乐就看得见。</p><button id="demo-next" type="button" aria-label="演示：下一行">›</button><span class="reader-leaf" aria-hidden="true">✿</span></div>
+            <div class="demo-bottom"><span><i class="little-dot"></i> 一直在，不打扰</span><span>互动演示 · 点点团子试试</span></div>
+          </div>
+        </div>
+        <span class="visual-caption">a little company, a little softer.</span>
+        <div class="floating-label"><span aria-hidden="true">↖</span> 这只小团子，可以带走。</div>
+      </div>
+    </section>
+    <div class="promise-strip"><div class="wrap"><span><b aria-hidden="true">◌</b> 小小一只，随处安放</span><span><b aria-hidden="true">♡</b> 不用签到，自在陪伴</span><span><b aria-hidden="true">↘</b> 隐藏之后，安静休息</span><span><b aria-hidden="true">⌂</b> 名字和故事，留在本机</span></div></div>
+    <section class="company wrap section" id="company" aria-labelledby="company-title">
+      <div class="section-heading"><div><span class="eyebrow">THE LITTLE THINGS</span><h2 id="company-title">陪伴，藏在小事里。</h2></div><p>不用复杂的玩法。<br>一点回应，一行故事，就刚刚好。</p></div>
+      <div class="feature-grid">
+        <article class="feature-card companion-card"><div class="card-art expression-art"><span class="tiny-label">今天，也在一起</span><div class="expression-pets"><img src="assets/dango.svg" alt="" width="145" height="135"><span aria-hidden="true">♡</span><img src="assets/dango.svg" alt="" width="100" height="93"></div><div class="expression-tags"><span>眨眨眼</span><span>揉揉脸</span><span>伸个懒腰</span></div></div><div class="card-copy"><span class="feature-number">01 / 一点回应</span><h3>点一下，它就知道你来了。</h3><p>点击会眨眼、揉脸，拖动时也有小表情。偶尔打个哈欠，不用一直说话，也有陪伴。</p></div></article>
+        <article class="feature-card reading-card"><div class="card-art reading-art"><span class="tiny-label">给忙碌，留一个小逗号</span><div class="paper-lines"><span></span><span></span><span></span></div><div class="reading-sample"><span aria-hidden="true">‹</span><p>风吹过树梢，故事还在继续。</p><span aria-hidden="true">›</span></div><div class="reading-sample-tools"><span>12 / 128</span><span>A− &nbsp; A＋ &nbsp; ☆ 书签</span></div></div><div class="card-copy"><span class="feature-number">02 / 一行故事</span><h3>读一点，换个小小世界。</h3><p>导入 TXT，菜单里点 R 就能阅读。翻行快捷键、字号和书签，让片刻休息更顺手。</p></div></article>
+        <article class="feature-card personal-card"><div class="card-art personal-art"><span class="tiny-label">你的小伙伴，由你来定义</span><div class="name-card"><span>HELLO, MY NAME IS</span><strong>小糯米<span aria-hidden="true">✦</span></strong><small>一个只属于你的名字</small></div><div class="color-dots" aria-label="奶油、暗夜和自定义主题"><i></i><i></i><i></i><span>选一种喜欢的心情</span></div></div><div class="card-copy"><span class="feature-number">03 / 一点偏爱</span><h3>慢慢熟悉，慢慢有了默契。</h3><p>给它起名字，换个颜色。偶尔互动会解锁小表情和配饰，没有任务，几天没来也没关系。</p></div></article>
+      </div>
+      <div class="quiet-note"><span aria-hidden="true">☾</span><p><strong>你忙的时候，它也懂。</strong>隐藏到托盘后，团子暂停动画，阅读文字一起收起；恢复后，由你决定是否继续读。</p><span class="quiet-word">quietly, here.</span></div>
+    </section>
+    <section class="download-section" id="download" aria-labelledby="download-title"><div class="wrap download-layout">
+      <div class="download-intro"><span class="eyebrow">A NEW LITTLE ROOMMATE</span><h2 id="download-title">桌面有空位吗？<br>团子想住进来。</h2><p>给普通的一天，添一个小小的伙伴。</p><img src="assets/dango.svg" width="160" height="149" alt="等待被带回家的团子"><span class="handwritten">准备好啦。</span></div>
+      <div class="download-card">
+        <div class="download-card-top"><span class="platform"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 5 8-1v7H3Zm10-1 8-1v8h-8ZM3 13h8v7l-8-1Zm10 0h8v8l-8-1Z"/></svg>Windows</span><span class="version-badge" data-release-version>发布准备中</span></div>
+        <h3>团子桌宠</h3><p class="platform-details">适用于 Windows 10 / 11 · x64</p>
+        <a class="button button-primary button-block" data-download="installer" href="https://github.com/2942293176/DanGo-downloads/releases/latest"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>下载安装版 <span class="button-arrow" aria-hidden="true">↗</span></a>
+        <p class="package-detail" id="installer-detail">安装向导 · 可选择安装位置 · 无需 Node.js</p>
+        <a class="portable-link" data-download="portable" href="https://github.com/2942293176/DanGo-downloads/releases/latest">想直接运行？下载免安装版 <span aria-hidden="true">↗</span></a><p class="portable-detail" id="portable-detail">下载后双击运行，不需要安装。</p>
+        <div class="release-footer"><span id="release-date">从 GitHub Releases 安全获取文件</span><a href="https://github.com/2942293176/DanGo-downloads/releases" target="_blank" rel="noopener noreferrer">更新记录 ↗</a></div>
+        <p class="release-status" id="release-status" role="status"></p>
+        <details class="checksum"><summary>查看文件校验值 <span aria-hidden="true">＋</span></summary><p>可使用 SHA-256 核对下载文件。</p><a data-download="checksums" href="https://github.com/2942293176/DanGo-downloads/releases/latest">下载 SHA256SUMS.txt ↗</a><div id="checksum-values"></div></details>
+        <noscript><p class="no-script">JavaScript 已关闭，可通过上方链接进入 GitHub Releases 选择安装包。</p></noscript>
+      </div>
+    </div></section>
+    <section class="guide wrap section" id="guide" aria-labelledby="guide-title"><div class="section-heading"><div><span class="eyebrow">THREE SMALL STEPS</span><h2 id="guide-title">很快，就熟悉了。</h2></div><span class="section-aside">不需要账号，也不用配置环境。</span></div><ol class="steps"><li><span class="step-number">01</span><div><h3>下载，然后打开</h3><p>选择安装版，跟随向导安装；也可以下载免安装版，双击就能见到团子。</p></div></li><li><span class="step-number">02</span><div><h3>拖一拖，找个舒服的位置</h3><p>按住团子，把它放在桌面喜欢的角落。点一点打招呼，悬停就能打开小菜单。</p></div></li><li><span class="step-number">03</span><div><h3>起个名字，带一本书</h3><p>在设置中起名、换色，或开启轻阅读并导入 TXT。之后，在菜单中点 R 开始阅读。</p></div></li></ol></section>
+    <section class="faq wrap section" id="faq" aria-labelledby="faq-title"><div class="faq-intro"><span class="eyebrow">A FEW LITTLE ANSWERS</span><h2 id="faq-title">你可能<br>还想知道。</h2><img src="assets/dango.svg" alt="" width="110" height="102"></div><div class="faq-list">
+      <details><summary>支持哪些电脑？<span aria-hidden="true">＋</span></summary><p>目前提供 Windows 10 / 11 的 x64 版本。macOS、Linux 和 Windows ARM 暂未提供经过验证的安装包。软件已经包含运行环境，无需安装 Node.js。</p></details>
+      <details><summary>安装版和免安装版有什么区别？<span aria-hidden="true">＋</span></summary><p>安装版有安装向导、开始菜单入口和卸载功能，适合日常使用。免安装版是一个 EXE 文件，双击即可运行。两种版本都把名字、阅读进度等保存在本机用户数据目录，免安装并不代表不保存数据。</p></details>
+      <details><summary>Windows 提示“未知发布者”怎么办？<span aria-hidden="true">＋</span></summary><p>团子目前尚未使用商业代码签名证书，Windows 可能显示未知发布者或 SmartScreen 提示。请确认文件来自本站链接的官方 GitHub Release，并用校验文件核对 SHA-256；如果无法确认来源，请不要运行。</p></details>
+      <details><summary>故事、名字和阅读进度会上传吗？<span aria-hidden="true">＋</span></summary><p>这些内容只保存在电脑本机，团子没有账号系统或云同步。使用搜索功能时，会通过默认浏览器访问相应网站；本下载页会向 GitHub 请求公开版本信息，不使用统计或广告脚本。</p></details>
+      <details><summary>隐藏后怎么把团子找回来？<span aria-hidden="true">＋</span></summary><p>点击 Windows 系统托盘里的团子图标，或右键选择“显示团子”。隐藏时动画暂停，阅读文字会收起；重新显示后，点菜单里的 R 或按 Ctrl+Alt+R 才会继续展开文字。</p></details>
+      <details><summary>下载慢，或者下载按钮没有打开？<span aria-hidden="true">＋</span></summary><p>安装包托管在 GitHub Releases，下载速度受本机网络影响。可以打开<a href="https://github.com/2942293176/DanGo-downloads/releases/latest" target="_blank" rel="noopener noreferrer">最新发布页</a>，在 Assets 中选择 Setup 安装版或 Portable 免安装版。暂时没有第三方镜像。</p></details>
+      <details><summary>如何更新或卸载？<span aria-hidden="true">＋</span></summary><p>更新前先从团子菜单点击“退出”，再运行新版安装包；免安装版重新下载新版 EXE 即可。暂不支持自动更新。安装版可从 Windows“已安装的应用”卸载，卸载会保留本机设置和阅读数据。</p></details>
+    </div></section>
+    <section class="contact wrap"><div><span aria-hidden="true">✳</span><div><h2>一起，把团子养得更好。</h2><p>功能许愿、使用问题，或者只是来打个招呼。</p></div></div><button id="copy-qq" class="contact-button" type="button">加入 QQ 交流群 <strong>1131636850</strong><span aria-hidden="true">⧉</span></button><span id="copy-status" role="status"></span></section>
+  </main>
+  <footer class="site-footer wrap"><a class="brand" href="#"><img src="assets/dango.svg" width="35" height="33" alt=""><span>团子<span class="brand-en">DanGo</span></span></a><p>小小团子，一直陪伴。<span>Made for the ordinary, lovely days.</span></p><a href="https://github.com/2942293176/DanGo-downloads" target="_blank" rel="noopener noreferrer">官方分发仓库 ↗</a></footer>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="260" viewBox="0 0 280 260" fill="none">
+  <defs>
+    <radialGradient id="body" cx="0" cy="0" r="1" gradientTransform="translate(112 102) rotate(70) scale(140 155)" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFC"/><stop offset=".58" stop-color="#FFF9EE"/><stop offset="1" stop-color="#E9DDCA"/></radialGradient>
+    <radialGradient id="blush"><stop stop-color="#F4A798" stop-opacity=".8"/><stop offset="1" stop-color="#F4A798" stop-opacity="0"/></radialGradient>
+    <linearGradient id="leaf" x1="139" y1="69" x2="167" y2="19" gradientUnits="userSpaceOnUse"><stop stop-color="#759372"/><stop offset="1" stop-color="#B5C9A0"/></linearGradient>
+    <filter id="shadow" x="0" y="0" width="280" height="260" filterUnits="userSpaceOnUse"><feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#554630" flood-opacity=".14"/></filter>
+  </defs>
+  <ellipse cx="140" cy="232" rx="76" ry="10" fill="#5C533D" opacity=".12"/>
+  <g filter="url(#shadow)">
+    <ellipse cx="77" cy="208" rx="27" ry="15" transform="rotate(-14 77 208)" fill="#F1E7D6"/>
+    <ellipse cx="203" cy="208" rx="27" ry="15" transform="rotate(14 203 208)" fill="#F1E7D6"/>
+    <path d="M140 65C83 65 41 111 40 170C39 210 75 229 140 229C205 229 241 210 240 170C239 111 197 65 140 65Z" fill="url(#body)" stroke="#E8DFCF" stroke-width="1.5"/>
+    <path d="M61 169C57 179 56 189 61 194" stroke="#FFFEF7" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+    <ellipse cx="83" cy="174" rx="27" ry="17" fill="url(#blush)"/>
+    <ellipse cx="197" cy="174" rx="27" ry="17" fill="url(#blush)"/>
+    <g fill="#51483E"><ellipse cx="106" cy="154" rx="6" ry="8"/><ellipse cx="174" cy="154" rx="6" ry="8"/></g>
+    <g fill="#FFFEF8"><circle cx="108" cy="151" r="1.8"/><circle cx="176" cy="151" r="1.8"/></g>
+    <path d="M130 171Q140 184 150 171" stroke="#705445" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M139 70C138 56 140 44 145 35" stroke="#78916D" stroke-width="4" stroke-linecap="round"/>
+    <path d="M142 58C138 33 152 19 181 22C180 46 165 62 142 58Z" fill="url(#leaf)"/>
+    <path d="M144 56L166 34" stroke="#E2EACA" stroke-width="1.7" stroke-linecap="round" opacity=".8"/>
+    <path d="M139 64C120 65 109 53 109 38C128 36 141 46 139 64Z" fill="#A4BA8D"/>
+  </g>
+</svg>
