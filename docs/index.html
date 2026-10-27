@@ -61,6 +61,7 @@
         <h3>团子桌宠</h3><p class="platform-details">适用于 Windows 10 / 11 · x64</p>
         <a class="button button-primary button-block" data-download="installer" href="https://github.com/2942293176/DanGo-downloads/releases/latest"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>下载安装版 <span class="button-arrow" aria-hidden="true">↗</span></a>
         <p class="package-detail" id="installer-detail">安装向导 · 可选择安装位置 · 无需 Node.js</p>
+        <p class="package-detail">安装版首次启动默认开启开机启动，可在「外观」中关闭。</p>
         <a class="portable-link" data-download="portable" href="https://github.com/2942293176/DanGo-downloads/releases/latest">想直接运行？下载免安装版 <span aria-hidden="true">↗</span></a><p class="portable-detail" id="portable-detail">下载后双击运行，不需要安装。</p>
         <div class="release-footer"><span id="release-date">从 GitHub Releases 安全获取文件</span><a href="https://github.com/2942293176/DanGo-downloads/releases" target="_blank" rel="noopener noreferrer">更新记录 ↗</a></div>
         <p class="release-status" id="release-status" role="status"></p>
@@ -71,10 +72,10 @@
     <section class="guide wrap section" id="guide" aria-labelledby="guide-title"><div class="section-heading"><div><span class="eyebrow">THREE SMALL STEPS</span><h2 id="guide-title">很快，就熟悉了。</h2></div><span class="section-aside">不需要账号，也不用配置环境。</span></div><ol class="steps"><li><span class="step-number">01</span><div><h3>下载，然后打开</h3><p>选择安装版，跟随向导安装；也可以下载免安装版，双击就能见到团子。</p></div></li><li><span class="step-number">02</span><div><h3>拖一拖，找个舒服的位置</h3><p>按住团子，把它放在桌面喜欢的角落。点一点打招呼，悬停就能打开小菜单。</p></div></li><li><span class="step-number">03</span><div><h3>起个名字，带一本书</h3><p>在设置中起名、换色，或开启轻阅读并导入 TXT。之后，在菜单中点 R 开始阅读。</p></div></li></ol></section>
     <section class="faq wrap section" id="faq" aria-labelledby="faq-title"><div class="faq-intro"><span class="eyebrow">A FEW LITTLE ANSWERS</span><h2 id="faq-title">你可能<br>还想知道。</h2><img src="assets/dango.svg" alt="" width="110" height="102"></div><div class="faq-list">
       <details><summary>支持哪些电脑和形象？<span aria-hidden="true">＋</span></summary><p>目前提供 Windows 10 / 11 的 x64 版本。macOS、Linux 和 Windows ARM 暂未提供经过验证的安装包。软件已经包含运行环境，无需安装 Node.js。设置中的“形象”支持导入透明静态 PNG / WebP，并可补充闭眼、点击、拖动等动作图。</p></details>
-      <details><summary>安装版和免安装版有什么区别？<span aria-hidden="true">＋</span></summary><p>安装版有安装向导、开始菜单入口和卸载功能，适合日常使用。免安装版是一个 EXE 文件，双击即可运行。两种版本都把名字、阅读进度等保存在本机用户数据目录，免安装并不代表不保存数据。</p></details>
+      <details><summary>安装版和免安装版有什么区别？<span aria-hidden="true">＋</span></summary><p>安装版有安装向导、开始菜单入口和卸载功能，首次启动默认开启 Windows 登录自启动，可在设置「外观」中关闭，升级会保留已关闭的选择。免安装版是一个 EXE 文件，双击即可运行，自启动需手动开启。两种版本都把名字、阅读进度等保存在本机用户数据目录，免安装并不代表不保存数据。</p></details>
       <details><summary>Windows 提示“未知发布者”怎么办？<span aria-hidden="true">＋</span></summary><p>团子目前尚未使用商业代码签名证书，Windows 可能显示未知发布者或 SmartScreen 提示。请确认文件来自本站链接的官方 GitHub Release，并用校验文件核对 SHA-256；如果无法确认来源，请不要运行。</p></details>
       <details><summary>故事、名字和阅读进度会上传吗？<span aria-hidden="true">＋</span></summary><p>这些内容只保存在电脑本机，团子没有账号系统或云同步。使用搜索功能时，会通过默认浏览器访问相应网站；本下载页会向 GitHub 请求公开版本信息，不使用统计或广告脚本。</p></details>
-      <details><summary>隐藏后怎么把团子找回来？<span aria-hidden="true">＋</span></summary><p>点击 Windows 系统托盘里的团子图标，或右键选择“显示团子”。隐藏时动画暂停，阅读文字会收起；重新显示后，点菜单里的 R 或按 Ctrl+Alt+R 才会继续展开文字。</p></details>
+      <details><summary>隐藏后怎么把团子找回来？<span aria-hidden="true">＋</span></summary><p>默认按 Ctrl+Alt+D 可一键隐藏／恢复，也可点击 Windows 系统托盘里的团子图标，或右键选择“显示团子”。隐藏时动画暂停，阅读文字会收起；重新显示后，点菜单里的 R 或按 Ctrl+Alt+R 才会继续展开文字。「办公」中还可设置鼠标穿透、位置锁定和全屏自动收起。</p></details>
       <details><summary>下载慢，或者下载按钮没有打开？<span aria-hidden="true">＋</span></summary><p>安装包托管在 GitHub Releases，下载速度受本机网络影响。可以打开<a href="https://github.com/2942293176/DanGo-downloads/releases/latest" target="_blank" rel="noopener noreferrer">最新发布页</a>，在 Assets 中选择 Setup 安装版或 Portable 免安装版。暂时没有第三方镜像。</p></details>
       <details><summary>如何更新或卸载？<span aria-hidden="true">＋</span></summary><p>更新前先从团子菜单点击“退出”，再运行新版安装包；免安装版重新下载新版 EXE 即可。暂不支持自动更新。安装版可从 Windows“已安装的应用”卸载，卸载会保留本机设置和阅读数据。</p></details>
     </div></section>
