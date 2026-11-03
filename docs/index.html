@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f6f5ee">
-  <meta name="description" content="团子 DanGo，一个轻盈的 Windows 桌面陪伴伙伴。点一点、揉揉脸，读一行故事，让工作和学习之间多一点松弛。">
+  <meta name="description" content="团子 DanGo，支持上传自己喜欢的 PNG / WebP 形象，让喜欢的角色陪你工作、学习和摸鱼。自定义桌面伙伴，也能读一点故事。">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
   <title>团子 DanGo — 给桌面一点小小的陪伴</title>
   <link rel="icon" href="assets/icon.png" type="image/png">
@@ -15,15 +15,15 @@
   <a class="skip-link" href="#main">跳到主要内容</a>
   <header class="site-header wrap">
     <a class="brand" href="#" aria-label="团子 DanGo 首页"><img src="assets/dango.svg" width="46" height="43" alt=""><span>团子<span class="brand-en">DanGo</span></span></a>
-    <nav aria-label="主导航"><a href="#company">认识团子</a><a href="#guide">使用指南</a><a href="#faq">常见问题</a></nav>
+    <nav aria-label="主导航"><a href="#company">认识团子</a><a href="#custom-character">自定义形象</a><a href="#guide">使用指南</a><a href="#faq">常见问题</a></nav>
     <a class="nav-download" href="#download">带团子回家 <span aria-hidden="true">↗</span></a>
   </header>
   <main id="main">
     <section class="hero wrap" aria-labelledby="hero-title">
       <div class="hero-copy">
         <div class="eyebrow"><span class="little-dot"></span> 桌面上，留一点柔软的位置</div>
-        <h1 id="hero-title">把一点松弛，<br>放在<span class="title-mark">桌面上<svg viewBox="0 0 300 16" aria-hidden="true"><path d="M4 11Q130 0 294 9"/></svg></span>。</h1>
-        <p class="hero-description">工作也好，学习也好。<br>有只软乎乎的小团子，陪你度过普通的一天。</p>
+        <h1 id="hero-title">让喜欢的形象，<br>陪在<span class="title-mark">你身边<svg viewBox="0 0 300 16" aria-hidden="true"><path d="M4 11Q130 0 294 9"/></svg></span>。</h1>
+        <p class="hero-description">上传自己喜欢的形象，让它成为你的桌面伙伴。<br>陪你工作、学习，也陪你偷偷摸一会儿鱼。<br>一张 PNG / WebP 图片，就能把喜欢留在身边。</p>
         <div class="hero-actions"><a class="button button-primary" data-download="installer" href="https://github.com/2942293176/DanGo-downloads/releases/latest"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg><span>下载 Windows 版</span><span class="button-arrow" aria-hidden="true">↗</span></a><a class="soft-link" href="#company">先认识一下 <span aria-hidden="true">↓</span></a></div>
         <p class="download-caption"><span data-version>Windows 10 / 11</span><i></i>64 位<i></i>无需注册</p>
         <div class="hero-note"><span aria-hidden="true">✳</span><p>不催你打卡，也不催你努力。<br><strong>偶尔想起来，点一下就好。</strong></p></div>
@@ -50,12 +50,12 @@
       <div class="feature-grid">
         <article class="feature-card companion-card"><div class="card-art expression-art"><span class="tiny-label">今天，也在一起</span><div class="expression-pets"><img src="assets/dango.svg" alt="" width="145" height="135"><span aria-hidden="true">♡</span><img src="assets/dango.svg" alt="" width="100" height="93"></div><div class="expression-tags"><span>眨眨眼</span><span>揉揉脸</span><span>伸个懒腰</span></div></div><div class="card-copy"><span class="feature-number">01 / 一点回应</span><h3>点一下，它就知道你来了。</h3><p>点击会眨眼、揉脸，拖动时也有小表情。偶尔打个哈欠，不用一直说话，也有陪伴。</p></div></article>
         <article class="feature-card reading-card"><div class="card-art reading-art"><span class="tiny-label">给忙碌，留一个小逗号</span><div class="paper-lines"><span></span><span></span><span></span></div><div class="reading-sample"><span aria-hidden="true">‹</span><p>风吹过树梢，故事还在继续。</p><span aria-hidden="true">›</span></div><div class="reading-sample-tools"><span>12 / 128</span><span>A− &nbsp; A＋ &nbsp; ☆ 书签</span></div></div><div class="card-copy"><span class="feature-number">02 / 一行故事</span><h3>读一点，换个小小世界。</h3><p>导入 TXT / EPUB，把故事放进本机书架。可选一至三行，展示在菜单或独立窗口中；自动翻动跟随展示行数，默认每隔 5 秒。</p></div></article>
-        <article class="feature-card personal-card"><div class="card-art personal-art"><span class="tiny-label">你的小伙伴，由你来定义</span><div class="name-card"><span>HELLO, MY NAME IS</span><strong>小糯米<span aria-hidden="true">✦</span></strong><small>一个只属于你的名字</small></div><div class="color-dots" aria-label="奶油、暗夜和自定义主题"><i></i><i></i><i></i><span>选一种喜欢的心情</span></div></div><div class="card-copy"><span class="feature-number">03 / 一点偏爱</span><h3>慢慢熟悉，慢慢有了默契。</h3><p>在团子、小企鹅、咕咕鸽、QiQi 和堡堡中挑选伙伴，取的名字切换后仍保留。也可导入自己的形象和角色包，按需开启自定义台词。</p></div></article>
+        <article id="custom-character" class="feature-card personal-card"><div class="card-art personal-art"><span class="tiny-label">上传一张图，换成你喜欢的样子</span><div class="name-card"><span>YOUR OWN CHARACTER</span><strong>小糯米<span aria-hidden="true">✦</span></strong><small>你的图片 · 你的桌面伙伴</small></div><div class="color-dots" aria-label="奶油、暗夜和自定义主题"><i></i><i></i><i></i><span>选一种喜欢的心情</span></div></div><div class="card-copy"><span class="feature-number">03 / 自定义形象</span><h3>让你喜欢的形象，陪着你。</h3><p>在「设置 → 形象」上传喜欢的 PNG / WebP 图片，就能换成自己的桌面伙伴。给它取个名字，让喜欢的角色、宠物或自己画的小家伙，陪你度过每个普通的日子。还可补充眨眼、点击、拖动等动作图，或导入 .dango 角色包。</p></div></article>
       </div>
       <div class="quiet-note"><span aria-hidden="true">☾</span><p><strong>你忙的时候，它也懂。</strong>隐藏到托盘后，团子暂停动画，阅读文字一起收起；恢复后，由你决定是否继续读。</p><span class="quiet-word">quietly, here.</span></div>
     </section>
     <section class="download-section" id="download" aria-labelledby="download-title"><div class="wrap download-layout">
-      <div class="download-intro"><span class="eyebrow">A NEW LITTLE ROOMMATE</span><h2 id="download-title">桌面有空位吗？<br>团子想住进来。</h2><p>给普通的一天，添一个小小的伙伴。</p><img src="assets/dango.svg" width="160" height="149" alt="等待被带回家的团子"><span class="handwritten">准备好啦。</span></div>
+      <div class="download-intro"><span class="eyebrow">A NEW LITTLE ROOMMATE</span><h2 id="download-title">桌面有空位吗？<br>团子想住进来。</h2><p>带团子回家，也把你喜欢的形象带到身边。</p><img src="assets/dango.svg" width="160" height="149" alt="等待被带回家的团子"><span class="handwritten">准备好啦。</span></div>
       <div class="download-card">
         <div class="download-card-top"><span class="platform"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 5 8-1v7H3Zm10-1 8-1v8h-8ZM3 13h8v7l-8-1Zm10 0h8v8l-8-1Z"/></svg>Windows</span><span class="version-badge" data-release-version>发布准备中</span></div>
         <h3>团子桌宠</h3><p class="platform-details">适用于 Windows 10 / 11 · x64</p>
@@ -69,9 +69,10 @@
         <noscript><p class="no-script">JavaScript 已关闭，可通过上方链接进入 GitHub Releases 选择安装包。</p></noscript>
       </div>
     </div></section>
-    <section class="guide wrap section" id="guide" aria-labelledby="guide-title"><div class="section-heading"><div><span class="eyebrow">THREE SMALL STEPS</span><h2 id="guide-title">很快，就熟悉了。</h2></div><span class="section-aside">不需要账号，也不用配置环境。</span></div><ol class="steps"><li><span class="step-number">01</span><div><h3>下载，然后打开</h3><p>选择安装版，跟随向导安装；也可以下载免安装版，双击就能见到团子。</p></div></li><li><span class="step-number">02</span><div><h3>拖一拖，找个舒服的位置</h3><p>按住团子，把它放在桌面喜欢的角落。点一点打招呼，悬停就能打开小菜单。</p></div></li><li><span class="step-number">03</span><div><h3>起个名字，带一本书</h3><p>在设置中起名、换形象，或开启轻阅读并导入 TXT / EPUB。之后，在菜单中点 R 开始阅读。</p></div></li></ol></section>
+    <section class="guide wrap section" id="guide" aria-labelledby="guide-title"><div class="section-heading"><div><span class="eyebrow">THREE SMALL STEPS</span><h2 id="guide-title">很快，就熟悉了。</h2></div><span class="section-aside">不需要账号，也不用配置环境。</span></div><ol class="steps"><li><span class="step-number">01</span><div><h3>下载，然后打开</h3><p>选择安装版，跟随向导安装；也可以下载免安装版，双击就能见到团子。</p></div></li><li><span class="step-number">02</span><div><h3>上传喜欢的形象</h3><p>打开「设置 → 形象」，点击「导入新形象」，选择一张喜欢的 PNG / WebP 图片。透明背景效果更自然，先上传正常图就能开始陪伴。</p></div></li><li><span class="step-number">03</span><div><h3>取个名字，开始陪伴</h3><p>在「陪伴」里给它取名，拖到桌面喜欢的角落。也可以开启轻阅读，导入 TXT / EPUB，让喜欢的形象陪你读一点故事。</p></div></li></ol></section>
     <section class="faq wrap section" id="faq" aria-labelledby="faq-title"><div class="faq-intro"><span class="eyebrow">A FEW LITTLE ANSWERS</span><h2 id="faq-title">你可能<br>还想知道。</h2><img src="assets/dango.svg" alt="" width="110" height="102"></div><div class="faq-list">
       <details><summary>支持哪些电脑和形象？<span aria-hidden="true">＋</span></summary><p>目前提供 Windows 10 / 11 的 x64 版本。macOS、Linux 和 Windows ARM 暂未提供经过验证的安装包。软件已经包含运行环境，无需安装 Node.js。默认提供团子、小企鹅、咕咕鸽、QiQi 和堡堡。设置中的“形象”支持导入透明 PNG / WebP、动作序列帧和 .dango 角色包，并可调整动作对齐。默认形象保持安静，自定义台词需主动开启。</p></details>
+      <details><summary>能上传自己喜欢的形象吗？<span aria-hidden="true">＋</span></summary><p>可以。在「设置 → 形象」点击「导入新形象」，上传喜欢的静态 PNG / WebP 图片，就能让它陪在桌面上；透明背景图片效果更自然。正常图必需，眨眼、点击和拖动等动作图可以之后再补，也支持导入 .dango 角色包。图片和名字只保存在本机。</p></details>
       <details><summary>安装版和免安装版有什么区别？<span aria-hidden="true">＋</span></summary><p>安装版有安装向导、开始菜单入口和卸载功能，首次启动默认开启 Windows 登录自启动，可在设置「外观」中关闭，升级会保留已关闭的选择。免安装版是一个 EXE 文件，双击即可运行，自启动需手动开启。两种版本都把名字、阅读进度等保存在本机用户数据目录，免安装并不代表不保存数据。</p></details>
       <details><summary>Windows 提示“未知发布者”怎么办？<span aria-hidden="true">＋</span></summary><p>团子目前尚未使用商业代码签名证书，Windows 可能显示未知发布者或 SmartScreen 提示。请确认文件来自本站链接的官方 GitHub Release，并用校验文件核对 SHA-256；如果无法确认来源，请不要运行。</p></details>
       <details><summary>故事、名字和阅读进度会上传吗？<span aria-hidden="true">＋</span></summary><p>这些内容只保存在电脑本机，团子没有账号系统或云同步。使用搜索功能时，会通过默认浏览器访问相应网站；本下载页会向 GitHub 请求公开版本信息，不使用统计或广告脚本。</p></details>
