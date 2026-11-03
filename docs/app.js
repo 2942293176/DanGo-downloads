@@ -14,6 +14,7 @@
   function normalizeRelease(value) {
     if (!value || value.published !== true || !/^\d+\.\d+\.\d+(?:-[\w.-]+)?$/.test(value.version)) throw new Error('No published release');
     if (!trustedAsset(value.assets?.installer) || !trustedAsset(value.assets?.portable)) throw new Error('Missing download assets');
+    if (value.buildId !== undefined && !/^\d{8}\.\d{1,9}$/.test(value.buildId)) throw new Error('Invalid build ID');
     return value;
   }
   function renderRelease(release) {
@@ -47,11 +48,17 @@
   function fromGitHub(release) {
     const version = release?.tag_name?.replace(/^v/, '');
     const assets = {};
-    for (const [kind, name] of Object.entries({ installer: `Dango-Setup-${version}-x64.exe`, portable: `Dango-Portable-${version}-x64.exe`, checksums: 'SHA256SUMS.txt' })) {
+    const prefix = `Dango-Setup-${version}-build-`;
+    const names = new Set((release.assets || []).filter(asset => asset.state === 'uploaded').map(asset => asset.name));
+    const buildId = [...names].filter(name => name.startsWith(prefix) && name.endsWith('-x64.exe')).map(name => name.slice(prefix.length, -8))
+      .filter(id => /^\d{8}\.\d{1,9}$/.test(id) && names.has(`Dango-Portable-${version}-build-${id}-x64.exe`) && names.has(`SHA256SUMS-${id}.txt`))
+      .sort((a, b) => b.localeCompare(a, undefined, { numeric: true }))[0];
+    const suffix = buildId ? `-build-${buildId}` : '';
+    for (const [kind, name] of Object.entries({ installer: `Dango-Setup-${version}${suffix}-x64.exe`, portable: `Dango-Portable-${version}${suffix}-x64.exe`, checksums: buildId ? `SHA256SUMS-${buildId}.txt` : 'SHA256SUMS.txt' })) {
       const asset = release.assets?.find((item) => item.name === name && item.state === 'uploaded');
       if (asset) assets[kind] = { name, url: asset.browser_download_url, size: asset.size, sha256: asset.digest?.replace(/^sha256:/, '') };
     }
-    return normalizeRelease({ published: !release.draft && !release.prerelease, version, publishedAt: release.published_at, assets });
+    return normalizeRelease({ published: !release.draft && !release.prerelease, version, ...(buildId ? { buildId } : {}), publishedAt: release.updated_at || release.published_at, assets });
   }
   async function json(url) {
     const response = await fetch(url, { signal: AbortSignal.timeout(6500), cache: 'no-cache', credentials: 'omit' });
@@ -63,7 +70,7 @@
     try { local = normalizeRelease(await json('release.json')); renderRelease(local); } catch { /* Static fallback links remain useful without a release or network. */ }
     try {
       const latest = fromGitHub(await json(`https://api.github.com/repos/${repository}/releases/latest`));
-      renderRelease(local?.version === latest.version ? local : latest);
+      renderRelease(local?.version === latest.version && (local.buildId || '').localeCompare(latest.buildId || '', undefined, { numeric: true }) >= 0 ? local : latest);
     } catch {
       if (!local) {
         $('#release-status').textContent = '暂时无法读取版本信息。下载按钮会带你前往 GitHub 最新发布页。';
