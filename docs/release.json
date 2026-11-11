@@ -2,26 +2,26 @@
   "published": true,
   "repository": "2942293176/DanGo-downloads",
   "version": "0.4.3",
-  "buildId": "20261103.2",
-  "publishedAt": "2026-11-03T07:02:15Z",
+  "buildId": "20261111.1",
+  "publishedAt": "2026-11-11T08:58:15Z",
   "assets": {
     "installer": {
-      "name": "Dango-Setup-0.4.3-build-20261103.2-x64.exe",
-      "size": 119423334,
-      "sha256": "548c496c1c14f17b5a753ed3d8f1e2eaec2cf9a74ca6f3d3bd4f4612bb1e8fe7",
-      "url": "https://github.com/2942293176/DanGo-downloads/releases/download/v0.4.3/Dango-Setup-0.4.3-build-20261103.2-x64.exe"
+      "name": "Dango-Setup-0.4.3-build-20261111.1-x64.exe",
+      "size": 127443547,
+      "sha256": "cfd4e6a1e933a981bd98e3c9e38cab2eff5f2b8e5b08be4a97bd01b237f0702a",
+      "url": "https://github.com/2942293176/DanGo-downloads/releases/download/v0.4.3/Dango-Setup-0.4.3-build-20261111.1-x64.exe"
     },
     "portable": {
-      "name": "Dango-Portable-0.4.3-build-20261103.2-x64.exe",
-      "size": 119248672,
-      "sha256": "f2a03f2188459ca4e80e255a3ccbfbf57e55d0aba246e154b3da67ddca546021",
-      "url": "https://github.com/2942293176/DanGo-downloads/releases/download/v0.4.3/Dango-Portable-0.4.3-build-20261103.2-x64.exe"
+      "name": "Dango-Portable-0.4.3-build-20261111.1-x64.exe",
+      "size": 127268894,
+      "sha256": "e0851e08d017984a7e14939f8d42faf33a17d69288702e98a6b39cfbedf284ec",
+      "url": "https://github.com/2942293176/DanGo-downloads/releases/download/v0.4.3/Dango-Portable-0.4.3-build-20261111.1-x64.exe"
     },
     "checksums": {
-      "name": "SHA256SUMS-20261103.2.txt",
+      "name": "SHA256SUMS-20261111.1.txt",
       "size": 221,
-      "sha256": "3467b65b5c35830fc9ea449eda974bdc4f9cba0f7a13b84d71fee2b3ac4d8dc7",
-      "url": "https://github.com/2942293176/DanGo-downloads/releases/download/v0.4.3/SHA256SUMS-20261103.2.txt"
+      "sha256": "069b801e1edc0b31b2864967009ebe2ac9da0387b6c06ce99fb7754e26ffcf04",
+      "url": "https://github.com/2942293176/DanGo-downloads/releases/download/v0.4.3/SHA256SUMS-20261111.1.txt"
     }
   }
 }
